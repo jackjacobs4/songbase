@@ -1,0 +1,14 @@
+{% extends "home-base.html" %}
+{% block title%}
+User
+{% endblock %}
+{% block page_content %}
+  <body>
+    <h1>this is the user page</h1>
+    {% if user_name == "Harry"%}
+    <h1>Hello, professor!</h1>
+    {% else %}
+    <h2>Hello, {{user_name}}</h2>
+    {% endif %}
+  </body>
+{% endblock %}
